@@ -1,0 +1,20 @@
+{
+  "name": "meetup",
+  "version": "1.0.0",
+  "description": "meetup21.09.2017",
+  "main": "wdio.conf.js",
+  "repository": "https://github.com/Kignuf/meetup-wdio-cucumber-intro",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "webdriverio": "^4.8.0",
+    "wdio-cucumber-framework": "^1.0.2",
+    "wdio-dot-reporter": "0.0.9",
+    "wdio-selenium-standalone-service": "0.0.9",
+    "wdio-spec-reporter": "^0.1.2"
+  },
+  "scripts": {
+    "test": "wdio"
+  },
+  "author": "kevin roulleau",
+  "license": "ISC"
+}

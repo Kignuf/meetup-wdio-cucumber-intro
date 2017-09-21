@@ -1,0 +1,9 @@
+git init
+npm init
+npm install wdio -g
+wdio config
+mkdir src
+mkdir src/features
+mkdir src/step-definitions
+touch src/features/login.feature
+touch src/features/step-definitions/steps.js
