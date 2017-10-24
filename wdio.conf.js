@@ -45,7 +45,9 @@ exports.config = {
         maxInstances: 5,
         //
         browserName: 'firefox'
-    }],
+    },
+    // { maxInstances: 5, browserName: 'chrome'}
+    ],
     //
     // ===================
     // Test Configurations
