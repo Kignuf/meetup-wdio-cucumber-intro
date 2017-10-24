@@ -17,10 +17,14 @@ module.export = defineSupportCode(({ Given, When, Then }) => {
 			$('button').click()
 		})
 
-	Then(/^I expect element "(.*)" to be visible$/,
-		function(element){
+	Then(/^I expect element "(.*)" to( not)* be visible$/,
+		function(element, falseCase){
 			let isVisible = browser.isVisible(element)
-			expect(isVisible).to.equal(true, `Expected "${element}" to be visible`)
+			if(falseCase) {
+				expect(isVisible).to.equal(false, `Expected "${element}" to not be visible`)
+			} else {
+				expect(isVisible).to.equal(true, `Expected "${element}" to be visible`)
+			}
 		})
 
 	Then(/^I wait a little bit$/,
